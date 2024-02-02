@@ -1,0 +1,173 @@
+
+.tempat_foto{
+    display:grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 300px 300px;
+    width:100%;
+    grid-gap:5px;
+    margin: 0 auto 30px;
+}
+.tempat_foto .imgslide{
+    display:grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 300px 300px;
+    width:100%;
+    height:605px;
+    grid-gap:5px;
+    margin: 0 auto ;
+}
+
+
+.tempat_foto .foto{
+    position:relative;
+    box-sizing: border-box;
+}
+.tempat_foto .foto:nth-child(1){
+    grid-row: 1/3;
+ 
+}
+.tempat_foto .foto:nth-child(4){
+    grid-row:1/4;
+    grid-column:3/4;
+}
+.tempat_foto .foto img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.tempat_foto .foto .bening{
+    width:100%;
+    height:120px;
+    background:black;
+    position:absolute;
+    opacity:50%;
+    bottom:0;
+}
+.tempat_foto .foto .deskripsi .kotak{
+    width:min-content;
+    background:rgb(43,118,132);
+    text-align:center;
+    padding:10px;
+    border-radius: 10px;
+    z-index: 1;
+}
+.tempat_foto .foto .deskripsi{
+    position:absolute;
+    bottom:0;
+    padding:10px;
+}
+
+.tempat_foto .foto .deskripsi p{
+    color:white;
+    font-size:20px;
+    font-family:'comic sans ms';
+    margin:10px 0;
+}
+
+.tempat_foto .foto .deskripsi p > span{
+    border-left:2px solid rgb(43,118,132);
+    margin:0 5px;
+}
+
+.tempat_foto .foto .deskripsi h2{
+    font-size:16px;
+    color:white;
+    letter-spacing:1px;
+}
+
+@media only screen and (max-width: 1000px){
+    .tempat_foto {
+        display:grid;
+        grid-template-columns:50% 50%;
+        grid-template-rows:300px 300px;
+        width:95%;
+        grid-gap:5px;
+        margin:0 auto 30px;
+    }
+    .tempat_foto .foto:nth-child(1) {
+        grid-row:1 / 2;
+    }
+
+    .tempat_foto .foto:nth-child(4) {
+        grid-row:1 / 2;
+        grid-column:2/2;
+    }
+
+
+    .container.foto  .imgslide .numberslide img:nth-child(1){
+        width:100%;
+        height:1000px;
+        margin-top: 290px;
+        margin-left: -25px;
+    }
+    .container, .content-slide, .foto, .imgslide:nth-child(1){
+        width:100%;
+        height:100%;
+
+    }
+    .imgslide, .imgslide:nth-child(1){
+        width:100%;
+        height:100%;
+
+    }
+    .container .content-side .imgslide img{
+        vertical-align:middle;
+        width:100%;
+        height:50%;
+    }
+    .tempat_kartu{
+        display:grid;
+        grid-template-columns:50% 50%;
+        margin:0 auto;
+        width:90%;
+        gap:10px;
+    }
+}
+@media only screen and (max-width: 670px){
+    .tempat_foto{
+        display:flex;
+        flex-direction:column;
+        width:100%;
+    }
+    .tempat_foto .foto{
+        width:100%;
+    }
+    .fitur{
+        display:flex;
+        flex-direction:column;
+        width:90%;
+        margin:0 auto;
+    }
+    .fitur .sidebar ul li {
+        margin-left:20px;
+
+    }
+    .fitur .sidebar form button{
+        margin-bottom:30px;
+
+    }
+    .tempat_foto .about{
+        width:100%;
+
+    }
+    .tempat_kartu{
+        display:flex;
+        flex-direction:column;
+        width:100%;
+    }
+    .tempat_kartu .kartu{
+        width:90%;
+        margin: 0 auto;
+    }
+
+    .next{
+
+         font-size: 50px;
+         margin-right: 1px;
+     
+     }
+     .imgslide {
+        padding:0px 0px 2px 4px;
+    
+      }
+}
